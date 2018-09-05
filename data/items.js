@@ -1,4 +1,4 @@
-const item = [
+const itemDb = [
   {
     id: 1,
     material: 'plastic',
@@ -46,4 +46,4 @@ const item = [
   
 ]
 
-export default item
+export default itemDb
