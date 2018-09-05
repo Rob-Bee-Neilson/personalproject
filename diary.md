@@ -32,3 +32,8 @@ building v2
     05/09/18
     - AM and PM try and build on what I've got, little idea what I'm doing, quickly running into the code I am unsure of how to use.
     - tried to fire up the local host page and it's coming up blank, something with the webpack, a confilct between two variants?
+
+    06/09/18
+Building cont
+    - Still issues with the dependencies, Ross helped for whole morn. Issue was conflict in the babel dependencies. Now sorted!
+    - looks like home/nav routes working.
