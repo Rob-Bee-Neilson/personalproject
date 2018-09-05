@@ -1,0 +1,20 @@
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.homeCol {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 50px;
+  max-width: 70%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
