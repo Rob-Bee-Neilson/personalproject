@@ -9,6 +9,7 @@ const localDb = [
       compostableTechnically: 'yes',
       compostableActually: 'no',
       landfill: 'no',
+      destination: '',
       comments: ''
     },
     {
