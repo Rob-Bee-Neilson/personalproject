@@ -3,17 +3,28 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 
 import Nav from './Nav'
 import Home from './Home'
+import Header from './Header'
 
 const App = () => {
   return (
       <Router>
+      
         <React.Fragment>
-          <h1>NoGrouch</h1>
-            <div className ="wrapper">
-              <Route path="/" component={Nav}/>
-              <Route exact path="/" component={Home}/>
-            </div>
+          
+          <div>
+            <Route path="/" componment={Header}/>
+          </div>
+          
+          <div className ="wrapper">
+            <Route path="/" component={Nav}/>
+          </div>
+
+          <div>
+            <Route exact path="/" component={Home}/>
+          </div>
+        
         </React.Fragment>
+      
       </Router>
     
   )
