@@ -12,7 +12,7 @@ const App = () => {
       
         <React.Fragment>
           
-          <div class="headerBar">
+          <div className="headerBar">
             <Route path="/" component={Header}/>
           </div>
           
@@ -26,7 +26,7 @@ const App = () => {
               <Route exact path="/" component={Home}/>
             </div>
 
-            <div class="quicklink">
+            <div>
               <Route exact path="/" component={CoffeeCups}/>
             </div>
 
