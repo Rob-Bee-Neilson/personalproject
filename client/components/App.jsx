@@ -4,6 +4,7 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 import Nav from './Nav'
 import Home from './Home'
 import Header from './Header'
+import CoffeeCups from './CoffeeCups'
 
 const App = () => {
   return (
@@ -11,16 +12,24 @@ const App = () => {
       
         <React.Fragment>
           
-          <div>
-            <Route path="/" componment={Header}/>
+          <div class="headerBar">
+            <Route path="/" component={Header}/>
           </div>
           
           <div className ="wrapper">
-            <Route path="/" component={Nav}/>
-          </div>
+              
+            <div>
+              <Route path="/" component={Nav}/>
+            </div>
 
-          <div>
-            <Route exact path="/" component={Home}/>
+            <div>
+              <Route exact path="/" component={Home}/>
+            </div>
+
+            <div class="quicklink">
+              <Route exact path="/" component={CoffeeCups}/>
+            </div>
+
           </div>
         
         </React.Fragment>

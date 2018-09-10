@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="homeCol">
       <h2>Home</h2>
-      <p>Text</p>
+      <p>Please select from the quick links or expanded links below</p>
     </div>
   )
 }
