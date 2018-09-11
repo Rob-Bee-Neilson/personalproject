@@ -14,11 +14,11 @@ const CoffeeCups = props => {
                 <h1>{itemDb[0].material}</h1>
                 <p>description</p>
                 <ul>
-                    <li> Technically recyclable: </li>
-                    <li> Actually recyclable: </li>
-                    <li> Technically compostable: </li>
-                    <li> Actually compostable: </li>
-                    <li> Good for landfill: </li>
+                    <li> Technically recyclable: {itemDb[0].recyclableTechnically}</li>
+                    <li> Actually recyclable: {itemDb[0].recyclableActually}</li>
+                    <li> Technically compostable: {itemDb[0].compostableTechnically}</li>
+                    <li> Actually compostable: {itemDb[0].compostableActually}</li>
+                    <li> Good for landfill: {itemDb[0].landfill}</li>
                 </ul>
                 <a href="/">Home</a>
             </div>
