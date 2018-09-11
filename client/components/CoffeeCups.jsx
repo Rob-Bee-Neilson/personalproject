@@ -11,7 +11,9 @@ const CoffeeCups = props => {
 
         < React.Fragment >
             <div className="homeCol">
-                <h1>{itemDb[0].material}</h1>
+                <button onClick={console.log('click')}>
+                    {itemDb[0].material}
+                </button>
                 <p>description</p>
                 <ul>
                     <li> Technically recyclable: {itemDb[0].recyclableTechnically}</li>
