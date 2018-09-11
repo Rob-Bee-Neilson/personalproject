@@ -36,7 +36,7 @@
     "webpack": "^3.0"
   },
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.16.3",
     "knex": "^0.15.2",
     "superagent": "^3.8.3"
   }

@@ -1,30 +1,32 @@
 import React from 'react'
-import items from '../../data/items'
-import {Link} from 'react-router-dom'
+import itemDb from '../../data/items'
+import { Link } from 'react-router-dom'
 
-const CoffeeCups = props => {
-    let location = Number(props.match.params.id) -1;
-    let itemDb = items[location];
+const CoffeeCups = (props) => {
+    // let location = Number(props.match.params.id) -1;
+    // let itemDb = items[location];
 
-    let name = props.match.params.name;
-    console.log(name)
+    const itemDb = props.itemDb
 
-        return (
-            <React.Fragment>
-                <div className="homeCol">
-                    <h1>{name}</h1>
-                    <p>description</p>
-                        <ul>
-                            <li> Technically recyclable: </li>
-                            <li> Actually recyclable: </li>
-                            <li> Technically compostable: </li>
-                            <li> Actually compostable: </li>
-                            <li> Good for landfill: </li>
-                        </ul>
-                    <a href="/">Home</a>
-                </div>
-            </React.Fragment>
-        )
+    // let name = props.match.params.name;
+    console.log(itemDb)
+
+    return (
+        <React.Fragment>
+            <div className="homeCol">
+                <h1>{itemDb.name}</h1>
+                <p>description</p>
+                <ul>
+                    <li> Technically recyclable: </li>
+                    <li> Actually recyclable: </li>
+                    <li> Technically compostable: </li>
+                    <li> Actually compostable: </li>
+                    <li> Good for landfill: </li>
+                </ul>
+                <a href="/">Home</a>
+            </div>
+        </React.Fragment>
+    )
 }
 
 export default CoffeeCups
