@@ -2,19 +2,16 @@ import React from 'react'
 import itemDb from '../../data/items'
 import { Link } from 'react-router-dom'
 
-const CoffeeCups = (props) => {
+const CoffeeCups = props => {
     // let location = Number(props.match.params.id) -1;
     // let itemDb = items[location];
 
-    const itemDb = props.itemDb
-
-    // let name = props.match.params.name;
-    console.log(itemDb)
 
     return (
-        <React.Fragment>
+
+        < React.Fragment >
             <div className="homeCol">
-                <h1>{itemDb.name}</h1>
+                <h1>{itemDb[0].material}</h1>
                 <p>description</p>
                 <ul>
                     <li> Technically recyclable: </li>
@@ -25,7 +22,7 @@ const CoffeeCups = (props) => {
                 </ul>
                 <a href="/">Home</a>
             </div>
-        </React.Fragment>
+        </React.Fragment >
     )
 }
 
