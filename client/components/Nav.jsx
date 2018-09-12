@@ -1,17 +1,21 @@
 import React from 'react'
+import itemDb from '../../data/items'
 //import ranks from '../../data/ranks'
 //import {Link} from 'react-router-dom'
 
 const Nav = () => {
     return (
+        
         <div className="navbar">
+            
             <h2>Nav</h2>
-            <p>Text</p>
-            {/* <ul>
-                {Object.keys(ranks).map(rankData => {
-                    return <li key={rankData}><Link to={`/list/${rankData}`}>{rankData}</Link></li>
-                })}
-            </ul>     */}
+            
+                <ul>
+                    <li>NZ Recycling Info</li>
+                    <li>NZ Composting Info</li>
+                    <li>Local Goodness</li>
+                </ul>
+                
         </div>
 )}
 export default Nav
