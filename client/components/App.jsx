@@ -5,6 +5,7 @@ import Nav from './Nav'
 import Home from './Home'
 import Header from './Header'
 import CoffeeCups from './CoffeeCups'
+import HomeRecycling from './HomeRecycling'
 
 const App = () => {
   return (
@@ -18,16 +19,24 @@ const App = () => {
           
           <div className ="wrapper">
               
-            <div>
+            <div className="navbar">
               <Route path="/" component={Nav}/>
             </div>
 
-            <div>
-              <Route exact path="/" component={Home}/>
-            </div>
+            <div className="content">
 
-            <div>
-              <Route exact path="/" component={CoffeeCups}/>
+              <div>
+                <Route exact path="/" component={Home}/>
+              </div>
+
+              <div>
+                <Route exact path="/" component={CoffeeCups}/>
+              </div>
+
+              <div>
+                <Route exact path="/" component={HomeRecycling}/>
+              </div>
+
             </div>
 
           </div>

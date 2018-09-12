@@ -1,5 +1,5 @@
 /* mobile*/
-.headerBar {
+/*.headerBar {
   display: flex;
   flex-direction: row;
   background-color: lightskyblue;
@@ -13,11 +13,13 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  background-color: bisque;
 }
 
 .homeCol {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  min-width: 80vw;
   height: 100%;
   margin-left: 50px;
   max-width: 70%;
@@ -40,7 +42,7 @@
   font-size: 2rem;
   text-align: center
 }
-
+*/
 /* Larger pages*/
 @media (min-width: 400px) {
   float: left;
@@ -49,48 +51,76 @@
   .wrapper {
     display: flex;
     flex-direction: row;
-    height: 100%;
-    background-color: rgb(135, 228, 135)
-  }
+    height: 90vh;
+    }
 
   .headerBar {
     display: flex;
     flex-direction: row;
     background-color: rgb(81, 81, 255);
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
     height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+  }
+  
+  .linkbox {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/grumbling-oscar-grouch-770x420.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+  }
+
+  .homeCol {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+    background-color: white;
+    
   }
 
   .coffee-info {
     display: block;
     background-color: white;
+    max-width: 400px;
   }
+
+  .homeRecycling-info {
+    display: block;
+    background-color: white;
+    max-width: 400px;
+  }
+
   .hidden {
     display: none !important;
   }
 
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
+   
   
-  .homeCol {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-left: 50px;
-    max-width: 70%;
-  }
-
-  .quickLink {
-    background-color: red;
-    border-radius: 95%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    text-align: center
-  }
+ 
 
 }

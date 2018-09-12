@@ -8,14 +8,13 @@ const Nav = () => {
         
         <div className="navbar">
             
-            <h2>Nav</h2>
             
-                <ul>
-                    <li>NZ Recycling Info</li>
-                    <li>NZ Composting Info</li>
-                    <li>Local Goodness</li>
-                </ul>
-                
+            
+            <div className="linkbox"><p>NZ Recycling Info</p></div>
+            <div className="linkbox"><p>NZ Composting Info</p></div>
+            <div className="linkbox"><p>Local Goodness</p></div>
+            
+
         </div>
 )}
 export default Nav
